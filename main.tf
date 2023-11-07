@@ -175,8 +175,7 @@ resource "aws_instance" "aws_instance_kubernetes" {
                     sudo microk8s enable dashboard dns ingress
                     sudo snap alias microk8s.kubectl kubectl
                     EOF
-
-  tags = {
+  tags                   = {
     Name = "kubernetes"
   }
 }
